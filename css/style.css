@@ -348,6 +348,7 @@ ul {
 } */
    .social.links .link-icon {
     display: inline-block;
+    padding: 12px;
     
 }
 
