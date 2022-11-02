@@ -328,7 +328,7 @@ ul {
     display: flex;
     width: 206px;
     height: 44px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     outline: 2px solid green;
@@ -343,11 +343,12 @@ ul {
     border-radius: 50%;   
 }
 
-.social.links .link-icon:not(:last-child) {
+/* .social.links .link-icon:not(:last-child) {
     margin-right: 10px;
-}
+} */
    .social.links .link-icon {
     display: inline-block;
+    
 }
 
 
