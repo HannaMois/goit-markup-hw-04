@@ -19,6 +19,7 @@ html {
     --header-color-line: #ECECEC;
     --background-color-footer: #2F303A;
     --border-color-portfolio: #EEEEEE;
+    --primery-color-icon: #AFB1B8;
 }
 
 body {
@@ -324,50 +325,38 @@ ul {
 
  /* соціальні мережі */
 
-/* .social.links {
-    display: flex;
-    width: 206px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
-
-    outline: 2px solid green;
-} */
-
-/* .social.links>li:not(:last-child){
-    margin-right: 10px;
-} */
-   .social.links {
+.social.links {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+
     height: 44px;
     width: 206px;
-    padding: 0;
-   }
+    
+}
 
-  .social.links>li:not(:last-child) {
+.social.links>li:not(:last-child) {
     margin-right: 10px;
-    }
+}
 
-    .social.links .logo-links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-size: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
+.social.links .logo-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
 
-        outline: 2px solid red;
-    }
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: 20px;
+}
 
    .social.links .link-icon {
     display: inline-block;
-    fill: #AFB1B8;
+    color: var(--primery-color-icon);
 }
 
 .social.links .logo-links:hover,
