@@ -340,7 +340,8 @@ ul {
    .social.links .logo-links {
     display: flex;
     width: 44px;
-    border-radius: 50%;   
+    border-radius: 50%; 
+    justify-content: center;  
 }
 
 /* .social.links .link-icon:not(:last-child) {
