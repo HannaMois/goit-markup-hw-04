@@ -19,7 +19,7 @@ html {
     --header-color-line: #ECECEC;
     --background-color-footer: #2F303A;
     --border-color-portfolio: #EEEEEE;
-    --primery-color-icon: #AFB1B8;
+    --color-icon: #AFB1B8;
 }
 
 body {
@@ -127,13 +127,23 @@ ul {
     color: var(--accent-color);
 }
 
-/* .site-nav .link:hover,
-.site-nav .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--accent-color);
-} */
 
+/* Icons */
+.contacts .link{
+    display: flex;
+    align-items: center;
+
+    fill: var(--text-color);
+}
+
+.icons {    
+    margin-right: 10px;
+}
+
+.contacts-item .icons:hover,
+.contacts-item .icons:focus {
+    fill: var(--accent-color);
+}
  
 /* Герой */
 .hero {
@@ -328,10 +338,7 @@ ul {
 .social.links {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-
+    
     height: 44px;
     width: 206px;
 }
@@ -355,7 +362,7 @@ ul {
 
 .social.links .link-icon {
     display: inline-block;
-    color: var(--primery-color-icon);
+    fill: var(--color-icon);
 }
 
 .social.links .logo-links:hover,
@@ -390,13 +397,29 @@ ul {
 }
 
 .clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
-     
-    outline: 2px solid red;
+    border: 1px solid var(--color-icon);
+    border-radius: 4px;
 }
 
+.clients-list .clients-logo{
+    display: inline-block;
+    fill: var(--color-icon);
+}
 
+.clients-item:hover,
+.clients-item:focus {
+    border-color: var(--accent-color);
+}
+
+.clients-item .clients-logo:hover,
+.clients-item .clients-logo:focus {
+    fill: var(--accent-color)
+}
 /* Підвал */
 .main-footer {
     display: flex;
@@ -437,22 +460,42 @@ ul {
 }
 /* Приєднуйтесь */
 
-.main-footer .social {
+.main-footer .join {
+    display: flex;
+    flex-direction: column;
+
     width: 206px;
-    height: 80px;
+    min-height: 80px;
     margin-left: 70px;
-    
 }
 
 .title {
     text-align: left;
-    font-size: 14px;
     margin-top: 0;
     margin-bottom: 20px;
+    padding-top: 12px;
+
+    font-size: 14px;
     text-transform: uppercase;
     color: var(--white-color);
-
 }
+
+.join .logo-links {
+    display: inline-block;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.logo-links>.link.icon {
+    fill: var(--white-color);
+}
+
+.join .logo-links:hover,
+.join .logo-links:focus {
+    background-color: var(--accent-color);
+}
+
+
 
 /* /////////////////////////////////// */
 
