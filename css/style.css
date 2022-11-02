@@ -332,28 +332,23 @@ ul {
     align-items: center;
 
     outline: 2px solid green;
-   }
+}
 
    .social.links .logo-links {
     display: flex;
-    align-items: center;
     width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-   }
+    border-radius: 50%;   
+}
 
    .social.links .link-icon {
     display: inline-block;
-    
-   }
+}
 
-/* .social.links .links + .links {
+.social.links .links + .links {
     margin-left: 10px;
         
 }
+/* 
  
 .social.links .links {
     display:block;
