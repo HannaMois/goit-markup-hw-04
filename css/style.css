@@ -334,17 +334,17 @@ ul {
     outline: 2px solid green;
 }
 
-.social.links>li:not(:last-child){
+/* .social.links>li:not(:last-child){
     margin-right: 10px;
-}
+} */
    .social.links .logo-links {
     display: flex;
     width: 44px;
     border-radius: 50%;   
 }
 
-.social.links .link-icon {
-    padding: 12px;
+.social.links .link-icon:not(:last-child) {
+    margin-right: 10px;
 }
    .social.links .link-icon {
     display: inline-block;
