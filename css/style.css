@@ -335,7 +335,7 @@ ul {
 }
 
 .social.links>li:not(:last-child){
-    margin-right: 10px:
+    margin-right: 10px;
 }
    .social.links .logo-links {
     display: flex;
