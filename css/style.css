@@ -334,7 +334,6 @@ ul {
 
     height: 44px;
     width: 206px;
-    
 }
 
 .social.links>li:not(:last-child) {
@@ -354,49 +353,21 @@ ul {
     background-size: 20px;
 }
 
-   .social.links .link-icon {
+.social.links .link-icon {
     display: inline-block;
     color: var(--primery-color-icon);
 }
 
 .social.links .logo-links:hover,
 .social.links .logo-links:focus {
-    color: var(--white-color);
     background-color: var(--accent-color);
 }
 
-/* 
- 
-.social.links .links {
-    display:block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    
-} */
-
-/* .links.instagram {
-    background-image: url(../images/Instagram.svg);
+.social.links .link-icon:hover,
+.social.links .link-icon:focus {
+    fill: var(--white-color);
 }
 
-.links.twitter {
-    background-image: url(../images/Twitter.svg);
-}
-
-.links.facebook {
-    background-image: url(../images/Facebook.svg);
-}
-
-.links.linkedln {
-    background-image: url(../images/Linkedln.svg);
-}  */
-
-/* заливка кнопки сделать
-.links.instagram:hover,
-.links.instagram:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color);
-} */
 
 /* Наші клієнти */
 .clients .container {
