@@ -339,6 +339,7 @@ ul {
 } */
    .social.links {
     display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     height: 44px;
@@ -355,10 +356,13 @@ ul {
         align-items: center;
         justify-content: center;
         width: 44px;
+        height: 44px;
         border-radius: 50%;
         background-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
+
+        outline: 2px solid red;
     }
 
    .social.links .link-icon {
