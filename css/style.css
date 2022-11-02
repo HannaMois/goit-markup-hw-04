@@ -343,6 +343,10 @@ ul {
     border-radius: 50%;   
 }
 
+.social.links .link-icon {
+    padding: 12px;
+}
+
 
 
    /* .social.links .link-icon {
