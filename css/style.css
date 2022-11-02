@@ -368,9 +368,13 @@ ul {
    .social.links .link-icon {
     display: inline-block;
     fill: #AFB1B8;
-     
 }
 
+.social.links .logo-links:hover,
+.social.links .logo-links:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
 
 /* 
  
