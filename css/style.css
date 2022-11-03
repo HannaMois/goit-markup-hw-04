@@ -1,13 +1,3 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 :root {
     --primery-text-color: #212121;
     --text-color: #757575;
@@ -151,6 +141,8 @@ ul {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1600px;
 
     letter-spacing: 0.06em;
@@ -180,8 +172,6 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.03em;
     background-color: var(--accent-color);
-    min-width: 216px;
-    height: 50px;
     
     border-radius: 4px;
     border-style: none;
@@ -395,7 +385,7 @@ ul {
     margin-left: 30px;
 }
 
-.clients-item {
+/* .clients-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,16 +393,28 @@ ul {
     height: 92px;
     border: 1px solid var(--color-icon);
     border-radius: 4px;
-}
+} */
 
 .clients-list .clients-logo{
     display: inline-block;
     fill: var(--color-icon);
 }
 
-.clients-item:hover,
-.clients-item:focus {
-    border: 1px solid var(--accent-color);
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--color-icon);
+    border-radius: 4px;  
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .clients-link:hover>.clients-logo,
@@ -420,9 +422,11 @@ ul {
     fill: var(--accent-color);
 }
 
+
 /* Підвал */
 .main-footer {
     display: flex;
+    align-items: baseline;
 }
 
 .footer {
@@ -458,12 +462,13 @@ ul {
 .link:focus {
     color: var(--accent-color);
 }
+
 /* Приєднуйтесь */
 
 .main-footer .join {
     display: flex;
     flex-direction: column;
-
+    
     width: 206px;
     min-height: 80px;
     margin-left: 70px;
@@ -473,9 +478,10 @@ ul {
     text-align: left;
     margin-top: 0;
     margin-bottom: 20px;
-    padding-top: 12px;
+    
 
-    font-size: 14px;
+    
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--white-color);
 }
@@ -558,6 +564,8 @@ ul {
 }
 
 .port-group {
+    display: block;
+    text-decoration: none;
     width: 370px;
  }
 
@@ -589,6 +597,7 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--primery-text-color);
 }
 
 .section-text.group {
