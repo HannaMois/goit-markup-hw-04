@@ -140,8 +140,9 @@ ul {
     margin-right: 10px;
 }
 
-.contacts-item .icons:hover,
-.contacts-item .icons:focus {
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
     fill: var(--accent-color);
 }
  
@@ -370,11 +371,11 @@ ul {
     background-color: var(--accent-color);
 }
 
-.social.links .link-icon:hover,
-.social.links .link-icon:focus {
+.social.links .logo-links:hover>.link-icon, 
+.social.links .logo-links:focus>.link-icon {
     fill: var(--white-color);
-}
-
+}  
+ 
 
 /* Наші клієнти */
 .clients .container {
@@ -411,13 +412,14 @@ ul {
 
 .clients-item:hover,
 .clients-item:focus {
-    border-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
-.clients-item .clients-logo:hover,
-.clients-item .clients-logo:focus {
-    fill: var(--accent-color)
+.clients-link:hover>.clients-logo,
+.clients-link:focus>.clients-logo{
+    fill: var(--accent-color);
 }
+
 /* Підвал */
 .main-footer {
     display: flex;
